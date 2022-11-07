@@ -37,14 +37,14 @@
             <td>
                 <label for="name">Enter name</label>
                 <input type="text" th:field="*{name}" id="name" required/>
-                <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}">name error</div>
+
             </td>
         </tr>
         <tr>
             <td>
                 <label for="country">Enter country</label>
                 <input type="text" th:field="*{country}" id="country"/>
-                <div th:if="${#fields.hasErrors('surname')}" th:errors="*{country}">surname error</div>
+
             </td>
         </tr>
         <br>
@@ -52,7 +52,7 @@
             <td>
                 <label for="age">Enter age</label>
                 <input type="number" min="0" max="127" th:field="*{age}" id="age">
-                <div th:if="${#fields.hasErrors('age')}" th:errors="*{age}">age error</div>
+
             </td>
         </tr>
         <br>
